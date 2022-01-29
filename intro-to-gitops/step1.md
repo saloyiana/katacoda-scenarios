@@ -17,6 +17,7 @@ Helm is a package manager that helps you to find, share, and use software that i
 
  `wget https://get.helm.sh/helm-v3.8.0-linux-amd64.tar.gz && tar -xf helm-v3.8.0-linux-amd64.tar.gz && mv linux-amd64/helm /usr/local/bin/`{{execute}} 
 
+To verfiy your installation, run `helm version`{{execute}}, the output should be something like: ```version.BuildInfo{Version:"v3.8.0", GitCommit:"d14138609b01886f544b2025f5000351c9eb092e", GitTreeState:"clean", GoVersion:"go1.17.5"}``` 
 ### Argocd Installation:
 After installing helm, we will install argocd using its offcial helmchart:
 
