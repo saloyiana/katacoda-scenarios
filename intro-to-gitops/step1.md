@@ -2,7 +2,7 @@ In this step, we will install argocd.
 
 First, we need to create argocd namespace by running this command:   
 `kubectl create namespace argocd`{{execute}}
-if you see this error `The connection to the server localhost:8080 was refused - did you specify the right host or port?`, then run `minikube status` to check the kubernetes cluster status, wait until the output shows: 
+if you see this error `The connection to the server localhost:8080 was refused - did you specify the right host or port?`, then run `minikube status`{{execute}} to check the kubernetes cluster status, wait until the output shows: 
 ```
 host: Running
 kubelet: Running
