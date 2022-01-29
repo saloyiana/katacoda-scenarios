@@ -1,12 +1,13 @@
 ## Argocd Source Configration.
-### GitHub Account 
+
+### GitHub Account: 
 1. fork `https://github.com/argoproj/argocd-example-apps.git` to your account. 
 
 2. In the `guestbook` folder, open `guestbook-ui-deployment.yaml`, and change the image version to `gcr.io/heptio-images/ks-guestbook-demo:0.1` instead of `gcr.io/heptio-images/ks-guestbook-demo:0.2`
 
 Open Argocd UI, From the `admin` page, click on `repositories`, `connect using https`, then enter the source url (e.g., https://github.com/<username>/argocd-example-apps).
 
-# Argocd Applcation Creation
+## Argocd Applcation Creation:
 First we need to create the application namespace (e.g., let's call it `demo`)
 
 `kubectl create namespace demo`{{execute}}

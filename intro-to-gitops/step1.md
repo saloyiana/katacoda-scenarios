@@ -12,16 +12,23 @@ kubeconfig: Configure
 ```
 then try to create the namespace again. 
 
-After that we will install argocd using its offcial helmchart:   
+### Helm Installation: 
+Helm is a package manager that helps you to find, share, and use software that is built for Kubernetes. Helm streamlines the installation and management of Kubernetes applications, and is the equivalent of the apt, yum, or homebrew utilities for Kubernetes. In this tutorial we will use helm to install Argocd.
+
+ `wget https://get.helm.sh/helm-v3.8.0-linux-amd64.tar.gz && tar -xf helm-v3.8.0-linux-amd64.tar.gz && mv linux-amd64/helm /usr/local/bin/`{{execute}} 
+
+### Argocd Installation:
+After installing helm, we will install argocd using its offcial helmchart:
+
 `helm repo add argo https://argoproj.github.io/argo-helm  && helm repo update && helm install argocd argo/argo-cd -n argocd`{{execute}}
 
-`kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml`{{execute}} 
-
+### Argocd UI:
 To access argocd UI, we can use port-forward command:   
 In a new terminal, run `kubectl port-forward svc/argocd-server -n argocd 8080:443 --address 0.0.0.0`{{execute}}
    
 Click on the plus icon (+), then click on select a `port to view on host1` and enter the port `8080`
 
+### Argocd Login:
 To login into Argocd: 
 ```
 Username: admin
