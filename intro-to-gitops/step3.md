@@ -5,7 +5,7 @@ Now check the status of argocd application, it should be `outofsync` which means
 Click on `app diff` to check out the differences, click on `sync` to deploy the new version and check out the app again.
 
 ## Challenge: 
-- Create the same argocd application but in a declarative way.
+- Create the same argocd application but in a declarative way (i.e. YAML file).
 ### Hint: 
 have a look at `https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#applications`
 After writting the yaml file, use `kubectl apply -f <filename> -n argocd` command to create it, then check it out in the Argocd UI. 
