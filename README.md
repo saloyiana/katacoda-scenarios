@@ -8,3 +8,7 @@ Visit https://www.katacoda.com/s3h to view the profile and interactive scenarios
 Visit https://www.katacoda.com/docs to learn more about creating Katacoda scenarios
 
 For examples, visit https://github.com/katacoda/scenario-example
+
+## First scenario: 
+### Intro to GitOps (Argocd):
+https://www.katacoda.com/s3h/scenarios/intro-to-gitops
